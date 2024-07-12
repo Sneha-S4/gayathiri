@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 10%;
+    box-shadow:rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+     }
+   .header h1{
+    padding-top: 20px;
+     }
+.header a{
+    cursor: pointer;
+   }
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+    padding-top: 20px;
+    }
+.navbar-link a{
+  text-decoration: none;
+  color:#1D232C;
+  padding-right: 20px;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color:rgb(55, 55, 167)
+    }
+.navbar-menu-toggle{
+    display: none;
+}
+/* side navbar*/
+    .side-navbar{
+        background-color: #1D232C;
+        width: 50%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: -60%;
+        padding: 20px;
+        color:white;
+        transition: 1s;
+        
+    }
+ .side-navbar-link{
+    margin-bottom: 25px;
+}
+.side-navbar-links a{
+    color: white;
+    text-decoration:none;
+}
+.side-navbar-links a:hover{
+   
+    text-decoration:underline;
+
+}
+section h1{
+        margin-top: 50px;}
+#home{
+    background-color: rgb(86, 231, 53);
+    height: 1000px;
+    padding:10px;
+    top: 0;
+    }
+#portfolio{
+    background-color: rgb(69, 191, 236);
+    height: 1000px;
+    padding:10px;
+    top: 0;
+    
+}
+#about{
+    background-color: yellow;
+    height: 1000px;
+    padding:10px;
+    top: 0;
+   
+    
+    
+}
+#services{
+    background-color: pink;
+    height: 1000px;
+    padding:10px;
+   
+    
+    
+}
+/* MediaQuery */
+   @media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display:block;
+    }
+    .navbar-links{
+        display:none;
+    }
+   }
